@@ -1,0 +1,39 @@
+ .App{
+  margin: 10px;
+  position: absolute;
+  top: 20%;
+  left:15%;
+ }  
+ 
+ 
+ nav{
+    position:static; 
+    top: 100px; 
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: underline;
+    opacity: 70%;
+    padding: 5px;
+   }   
+
+  main{
+    text-align: center;
+    padding: 5px;
+  } 
+
+  footer{
+    position: relative;
+    bottom: 0%;
+    padding:10px; 
+    line-height: .5;
+    text-align: center;
+}
+.light-theme{
+  background-color: rgb(31, 164, 226);
+  color: white;
+}
+
+.dark-theme{
+  background-color: black;
+  color: red;
+}
