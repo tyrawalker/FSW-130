@@ -3,9 +3,11 @@ import React from "react"
 function MovieListing (props) {
     return (
         <div className= "movieBox">
-            <img src={props.info.uri} alt ="icon"/>
-            <h6>{props.info.title}</h6>
-            <button>Delete</button>
+            
+            <div><img src={props.image}alt="icon"></img></div>
+            <h6>{props.title}</h6>
+            
+            
         </div>
     )
 }

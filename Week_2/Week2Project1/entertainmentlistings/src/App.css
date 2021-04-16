@@ -1,11 +1,29 @@
-.addForm{
-  text-align: center;
-  padding: 20px;
+header{
+  align-items: center;
+  background-color: navy;
 }
-
 .grid-container {
   position: relative;
   bottom:20%;
   display: grid; 
   grid-template-columns: repeat(5, 1fr);
+  
+}
+
+img{
+  max-height: 100px;
+  z-index: -1;
+  
+}
+
+header{
+  position: relative;
+  left: 40%;
+}
+
+.movieBox{
+  padding: 10px;
+  border: 2px solid black;
+  align-content: center;
+  text-align: center;
 }
