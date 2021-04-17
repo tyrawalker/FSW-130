@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
+import UglyThing from "./components/uglything"
+import uglyThing from './components/uglything.json'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+class App extends React.Component {
+  render(){ 
+    const uglyThings = uglyThing.map(uglyThing =><UglyThing key= {uglyThing.image} title={uglyThing.title} description= {uglyThing.description}/>)
+
+    return(
+      
+
+      <div className ="App">
+        <form className= "addForm">
+          <input type = {Text} placeholder="Image Url" ></input>
+          <input type= {Text} placeholder="Title" ></input>
+          <input type= {Text} placeholder= "Description"></input>
+          <button>Submit</button>
+        </form>
+            <br></br>
+        
+        <div className= "grid-container">{uglyThings}</div>
+
+      </div>
+    )
+  }}
 
 export default App;
