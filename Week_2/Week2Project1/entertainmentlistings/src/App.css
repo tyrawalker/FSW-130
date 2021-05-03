@@ -1,29 +1,28 @@
-header{
-  align-items: center;
-  background-color: navy;
-}
+
 .grid-container {
   position: relative;
   bottom:20%;
-  display: grid; 
-  grid-template-columns: repeat(5, 1fr);
+  display: flex; 
+  flex-direction: row;
+  grid-template-columns: repeat(3, 1fr);
   
 }
 
 img{
-  max-height: 100px;
+  height: 100px;
+  width: 100px;
   z-index: -1;
-  
 }
 
-header{
-  position: relative;
-  left: 40%;
-}
 
 .movieBox{
   padding: 10px;
   border: 2px solid black;
   align-content: center;
+  text-align: center;
+}
+
+.addForm{
+  align-items: center;
   text-align: center;
 }
