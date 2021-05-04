@@ -8,7 +8,7 @@ function increment(amount){
     }
 }
 
-function deccrement(){
+function decrement(){
     return{
         type:"DECREMENT"
     }
@@ -59,3 +59,4 @@ store.subscribe(()=>{
 })
 
 store.dispatch(increment(5))
+store.dispatch(double(2))
