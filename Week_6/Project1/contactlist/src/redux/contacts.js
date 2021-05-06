@@ -1,3 +1,4 @@
+import redux, {createStore} from "redux"
 
 export function addContact (person){
     return{
@@ -30,7 +31,7 @@ const person= [
     ]
 
 //reducer
-export default function contactReducer (state = person, action){
+ function contactReducer (state = person, action){
     switch (action.type){
         case "ADD_CONTACT":
             return{ 
@@ -45,3 +46,10 @@ export default function contactReducer (state = person, action){
         default:
     }        return person
 }
+
+const store = createStore(contactReducer)
+store.subscribe(()=>{
+    console.log(store.getState())
+})
+
+export default store
